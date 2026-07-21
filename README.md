@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Task Manager
 
-## Getting Started
+A simple Task Manager application built using **Next.js**, **React**, and **TypeScript**. This project demonstrates the use of **useState** and **useRef** hooks to add and display tasks dynamically.
 
-First, run the development server:
+## 🚀 Features
+
+- Add a new task
+- Display all tasks in a table
+- Store Task ID, Description, and Duration
+- Built with React Hooks
+- Written in TypeScript
+
+## 🛠️ Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- CSS
+
+## 📂 Project Structure
+
+```
+app/
+│── page.tsx
+│── layout.tsx
+│── globals.css
+```
+
+## 📸 Preview
+
+The application allows users to:
+
+- Enter Task ID
+- Enter Task Description
+- Enter Task Duration
+- Click **Add Task**
+- View all tasks in a table
+
+## 📋 Task Model
+
+```typescript
+interface TaskType {
+    taskID: number;
+    description: string;
+    duration: number;
+}
+```
+
+## 📚 React Concepts Used
+
+- useState
+- useRef
+- Event Handling
+- TypeScript Interfaces
+- Array State Updates
+- Conditional Validation
+
+## ▶️ Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/task-manager.git
+```
+
+Navigate to the project
+
+```bash
+cd task-manager
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📖 How It Works
 
-## Learn More
+1. Enter the Task ID.
+2. Enter the Task Description.
+3. Enter the Duration.
+4. Click **Add Task**.
+5. The task is added to the table instantly.
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Learning Objectives
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project helps understand:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Managing state with `useState`
+- Accessing input values using `useRef`
+- Working with arrays in React
+- Creating interfaces in TypeScript
+- Rendering lists using `map()`
+- Updating UI dynamically
 
-## Deploy on Vercel
+## 👨‍💻 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Suraj BM**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Artificial Intelligence & Machine Learning Student
+
+---
+
+⭐ If you found this project useful, consider giving it a star.
