@@ -8,7 +8,7 @@ Fridge to Recipe is an AI-powered web application that generates delicious recip
 
 📹 **Watch the project demo here:**
 
-https://drive.google.com/file/d/14vLv3G2xZEfP8YpJ64woZRryWPFFUBrt/view?usp=sharing
+https://drive.google.com/file/d/1laDE2ySgSuf2HylAQ8mR9EJ2DqnWyO88/view?usp=sharing
 
 ---
 
