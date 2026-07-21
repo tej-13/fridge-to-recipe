@@ -1,21 +1,30 @@
 # 🍳 Fridge to Recipe
 
-Fridge to Recipe is an AI-powered web application that generates recipes using the ingredients you already have at home. Simply enter the ingredients available in your fridge, and the application leverages Google's Gemini AI to create a complete recipe with preparation details, ingredients, cooking instructions, estimated nutrition, and smart ingredient substitutions.
+Fridge to Recipe is an AI-powered web application that generates delicious recipes using the ingredients you already have at home. Simply enter the ingredients available in your fridge, and the application uses Google's Gemini AI to create a complete recipe including ingredients, cooking instructions, preparation time, servings, difficulty level, nutrition estimates, and smart ingredient substitutions.
+
+---
+
+## 🎥 Demo Video
+
+📹 **Watch the project demo here:**
+
+https://drive.google.com/file/d/14vLv3G2xZEfP8YpJ64woZRryWPFFUBrt/view?usp=sharing
 
 ---
 
 ## 🚀 Features
 
 - 🥕 Generate recipes from available ingredients
-- 🤖 AI-powered recipe generation using Google Gemini
+- 🤖 AI-powered recipe generation using Google Gemini 2.5 Flash
 - ❤️ Save favorite recipes locally
 - 📋 Copy recipes to clipboard
-- 🌙 Light/Dark mode support
+- 🌙 Light/Dark mode
 - 📊 Cooking progress tracker
 - 👨‍🍳 Interactive cooking checklist
 - 🍽️ Adjustable serving size
 - 💡 Smart ingredient substitutions
 - 🥗 Estimated nutrition information
+- 📱 Responsive UI
 
 ---
 
@@ -29,27 +38,27 @@ Fridge to Recipe is an AI-powered web application that generates recipes using t
 
 ---
 
-## ⚙️ Setup
+## ⚙️ Installation
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/tej-13/fridge-to-recipe.git
 ```
 
-### 2. Navigate to the project
+### Navigate into the project
 
 ```bash
 cd fridge-to-recipe
 ```
 
-### 3. Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Create an environment file
+### Configure environment variables
 
 Create a file named `.env.local`
 
@@ -57,13 +66,13 @@ Create a file named `.env.local`
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-### 5. Start the development server
+### Start the development server
 
 ```bash
 npm run dev
 ```
 
-Open your browser and visit:
+Open:
 
 ```
 http://localhost:3000
@@ -90,24 +99,24 @@ Rice, Tomato, Onion, Garlic
 - Preparation time
 - Cooking time
 - Difficulty level
-- Number of servings
+- Servings
 - Ingredients list
 - Step-by-step cooking instructions
+- Nutrition estimates
 - Ingredient substitutions
-- Estimated nutrition
 
-4. Optionally:
+4. Additional features:
 
-- Save recipes
+- Save recipes locally
 - Copy recipes
 - Track cooking progress
 - Adjust serving size
 
 ---
 
-## 🤖 AI Usage
+## 🤖 AI Integration
 
-This project uses **Google Gemini 2.5 Flash** through the Gemini API to generate structured recipe data.
+This application uses **Google Gemini 2.5 Flash API** to generate structured recipe information.
 
 The AI generates:
 
@@ -116,11 +125,11 @@ The AI generates:
 - Ingredients
 - Cooking instructions
 - Ingredient substitutions
-- Nutrition estimates
+- Estimated nutrition
 
-Prompt engineering ensures the AI returns structured JSON that can be rendered directly by the application.
+Prompt engineering is used to ensure the AI returns a structured JSON response that can be rendered directly in the application.
 
-> **Note:** AI-generated recipes may occasionally contain inaccurate ingredient quantities or cooking instructions. Always review recipes before preparing food.
+> **Note:** AI-generated recipes may occasionally contain inaccurate quantities or cooking instructions. Please review recipes before preparing food.
 
 ---
 
@@ -129,8 +138,8 @@ Prompt engineering ensures the AI returns structured JSON that can be rendered d
 - Requires an internet connection.
 - Requires a valid Gemini API key.
 - Nutrition values are estimated.
-- AI responses may vary for identical inputs.
-- Saved recipes are stored only in the browser's Local Storage.
+- AI responses may vary for the same ingredients.
+- Saved recipes are stored in the browser's Local Storage.
 - No user authentication or cloud synchronization.
 
 ---
@@ -138,7 +147,7 @@ Prompt engineering ensures the AI returns structured JSON that can be rendered d
 ## ⏱️ Time Spent
 
 | Task | Time |
-|----------------------------|---------:|
+|------|------:|
 | Project Setup | 20 minutes |
 | UI Design & Styling | 2 hours |
 | Gemini API Integration | 1 hour 30 minutes |
@@ -186,11 +195,23 @@ README.md
 
 ---
 
+## 📌 Repository
+
+GitHub Repository:
+
+https://github.com/tej-13/fridge-to-recipe
+
+---
+
 ## 👨‍💻 Author
 
 **Tejas D Ponarkar**
 
 Computer Science Graduate
+
+GitHub Profile:
+
+https://github.com/tej-13
 
 ---
 
