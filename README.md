@@ -1,114 +1,190 @@
-# 📝 Task Manager
+# 🍳 Fridge to Recipe
 
-A simple Task Manager application built using **Next.js**, **React**, and **TypeScript**. This project demonstrates the use of **useState** and **useRef** hooks to add and display tasks dynamically.
+Fridge to Recipe is an AI-powered web application that generates recipes based on ingredients available in your fridge. Simply enter the ingredients you have, and the application uses Google's Gemini AI to generate a complete recipe with ingredients, cooking steps, preparation time, servings, difficulty level, and suggested ingredient swaps.
+
+---
 
 ## 🚀 Features
 
-- Add a new task
-- Display all tasks in a table
-- Store Task ID, Description, and Duration
-- Built with React Hooks
-- Written in TypeScript
+- 🥕 Generate recipes from available ingredients
+- 🤖 AI-powered recipe generation using Google Gemini
+- ❤️ Save favorite recipes locally
+- 📋 Copy recipes to clipboard
+- 🌙 Light/Dark mode
+- 📊 Cooking progress tracker
+- 👨‍🍳 Interactive cooking checklist
+- 🍽️ Adjustable serving size
+- 💡 Smart ingredient substitutions
+- 🥗 Estimated nutrition section
+
+---
 
 ## 🛠️ Tech Stack
 
-- Next.js
+- Next.js 16
 - React
 - TypeScript
-- CSS
+- Tailwind CSS
+- Google Gemini 2.5 Flash API
 
-## 📂 Project Structure
+---
 
-```
-app/
-│── page.tsx
-│── layout.tsx
-│── globals.css
-```
+## ⚙️ Setup
 
-## 📸 Preview
-
-The application allows users to:
-
-- Enter Task ID
-- Enter Task Description
-- Enter Task Duration
-- Click **Add Task**
-- View all tasks in a table
-
-## 📋 Task Model
-
-```typescript
-interface TaskType {
-    taskID: number;
-    description: string;
-    duration: number;
-}
-```
-
-## 📚 React Concepts Used
-
-- useState
-- useRef
-- Event Handling
-- TypeScript Interfaces
-- Array State Updates
-- Conditional Validation
-
-## ▶️ Getting Started
-
-Clone the repository
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/task-manager.git
+git clone https://github.com/your-username/fridge-to-recipe.git
 ```
 
-Navigate to the project
+### 2. Navigate to the project
 
 ```bash
-cd task-manager
+cd fridge-to-recipe
 ```
 
-Install dependencies
+### 3. Install dependencies
 
 ```bash
 npm install
 ```
 
-Run the development server
+### 4. Create an environment file
+
+Create a file named `.env.local`
+
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+### 5. Start the development server
 
 ```bash
 npm run dev
 ```
 
-Open your browser
+Open your browser and visit:
 
 ```
 http://localhost:3000
 ```
 
-## 📖 How It Works
+---
 
-1. Enter the Task ID.
-2. Enter the Task Description.
-3. Enter the Duration.
-4. Click **Add Task**.
-5. The task is added to the table instantly.
+## 📖 Usage
 
-## 🎯 Learning Objectives
+1. Enter ingredients separated by commas.
 
-This project helps understand:
+Example:
 
-- Managing state with `useState`
-- Accessing input values using `useRef`
-- Working with arrays in React
-- Creating interfaces in TypeScript
-- Rendering lists using `map()`
-- Updating UI dynamically
+```
+Eggs, Onion, Tomato, Green Chilli
+```
+
+2. Click **Generate Recipe**.
+
+3. The AI generates:
+
+- Recipe title
+- Description
+- Preparation time
+- Difficulty
+- Servings
+- Ingredients
+- Cooking steps
+- Ingredient swaps
+
+4. Optionally:
+
+- Save the recipe
+- Copy the recipe
+- Track cooking progress
+- Adjust serving size
+
+---
+
+## 🤖 AI Usage Note
+
+This project uses **Google Gemini 2.5 Flash** through the Gemini API.
+
+The AI is responsible for generating:
+
+- Recipe title
+- Description
+- Ingredients
+- Cooking instructions
+- Smart ingredient substitutions
+
+Prompt engineering was used to ensure the response is returned in a structured JSON format suitable for rendering in the application.
+
+AI-generated content may occasionally produce inaccurate quantities or cooking instructions, so recipes should be reviewed before preparation.
+
+---
+
+## ⚠️ Limitations
+
+- Requires an active internet connection.
+- Requires a valid Gemini API key.
+- Nutritional values are estimated and not calculated dynamically.
+- AI responses may vary for the same input.
+- Saved recipes are stored only in the browser's Local Storage.
+- No user authentication or cloud synchronization.
+
+---
+
+## ⏱️ Time Spent
+
+| Task | Time |
+|------|------:|
+| Project Setup | 30 minutes |
+| UI Design | 3 hours |
+| Gemini API Integration | 2 hours |
+| Recipe Rendering | 2 hours |
+| Save & Copy Features | 1 hour |
+| Dark Mode | 30 minutes |
+| Progress Tracker | 1 hour |
+| Testing & Bug Fixes | 2 hours |
+| Documentation | 30 minutes |
+
+**Total Time:** Approximately **12 hours**
+
+---
+
+## 📂 Project Structure
+
+```
+app/
+├── api/
+│   └── recipe/
+│       └── route.ts
+├── globals.css
+├── layout.tsx
+└── page.tsx
+
+public/
+
+.env.local
+package.json
+README.md
+```
+
+---
+
+## 🔮 Future Improvements
+
+- User authentication
+- Recipe history
+- Image generation for recipes
+- Dynamic nutrition calculation
+- Shopping list generation
+- Voice-guided cooking
+- Multi-language support
+
+---
 
 ## 👨‍💻 Author
 
-**Suraj BM**
+**Tejas D Ponarkar**
 
 Artificial Intelligence & Machine Learning Student
 
