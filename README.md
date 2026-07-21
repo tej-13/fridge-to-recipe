@@ -1,6 +1,6 @@
 # 🍳 Fridge to Recipe
 
-Fridge to Recipe is an AI-powered web application that generates recipes based on ingredients available in your fridge. Simply enter the ingredients you have, and the application uses Google's Gemini AI to generate a complete recipe with ingredients, cooking steps, preparation time, servings, difficulty level, and suggested ingredient swaps.
+Fridge to Recipe is an AI-powered web application that generates recipes using the ingredients you already have at home. Simply enter the ingredients available in your fridge, and the application leverages Google's Gemini AI to create a complete recipe with preparation details, ingredients, cooking instructions, estimated nutrition, and smart ingredient substitutions.
 
 ---
 
@@ -10,12 +10,12 @@ Fridge to Recipe is an AI-powered web application that generates recipes based o
 - 🤖 AI-powered recipe generation using Google Gemini
 - ❤️ Save favorite recipes locally
 - 📋 Copy recipes to clipboard
-- 🌙 Light/Dark mode
+- 🌙 Light/Dark mode support
 - 📊 Cooking progress tracker
 - 👨‍🍳 Interactive cooking checklist
 - 🍽️ Adjustable serving size
 - 💡 Smart ingredient substitutions
-- 🥗 Estimated nutrition section
+- 🥗 Estimated nutrition information
 
 ---
 
@@ -34,7 +34,7 @@ Fridge to Recipe is an AI-powered web application that generates recipes based o
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/fridge-to-recipe.git
+git clone https://github.com/tej-13/fridge-to-recipe.git
 ```
 
 ### 2. Navigate to the project
@@ -78,7 +78,7 @@ http://localhost:3000
 Example:
 
 ```
-Eggs, Onion, Tomato, Green Chilli
+Rice, Tomato, Onion, Garlic
 ```
 
 2. Click **Generate Recipe**.
@@ -88,45 +88,48 @@ Eggs, Onion, Tomato, Green Chilli
 - Recipe title
 - Description
 - Preparation time
-- Difficulty
-- Servings
-- Ingredients
-- Cooking steps
-- Ingredient swaps
+- Cooking time
+- Difficulty level
+- Number of servings
+- Ingredients list
+- Step-by-step cooking instructions
+- Ingredient substitutions
+- Estimated nutrition
 
 4. Optionally:
 
-- Save the recipe
-- Copy the recipe
+- Save recipes
+- Copy recipes
 - Track cooking progress
 - Adjust serving size
 
 ---
 
-## 🤖 AI Usage Note
+## 🤖 AI Usage
 
-This project uses **Google Gemini 2.5 Flash** through the Gemini API.
+This project uses **Google Gemini 2.5 Flash** through the Gemini API to generate structured recipe data.
 
-The AI is responsible for generating:
+The AI generates:
 
 - Recipe title
 - Description
 - Ingredients
 - Cooking instructions
-- Smart ingredient substitutions
+- Ingredient substitutions
+- Nutrition estimates
 
-Prompt engineering was used to ensure the response is returned in a structured JSON format suitable for rendering in the application.
+Prompt engineering ensures the AI returns structured JSON that can be rendered directly by the application.
 
-AI-generated content may occasionally produce inaccurate quantities or cooking instructions, so recipes should be reviewed before preparation.
+> **Note:** AI-generated recipes may occasionally contain inaccurate ingredient quantities or cooking instructions. Always review recipes before preparing food.
 
 ---
 
 ## ⚠️ Limitations
 
-- Requires an active internet connection.
+- Requires an internet connection.
 - Requires a valid Gemini API key.
-- Nutritional values are estimated and not calculated dynamically.
-- AI responses may vary for the same input.
+- Nutrition values are estimated.
+- AI responses may vary for identical inputs.
 - Saved recipes are stored only in the browser's Local Storage.
 - No user authentication or cloud synchronization.
 
@@ -135,18 +138,18 @@ AI-generated content may occasionally produce inaccurate quantities or cooking i
 ## ⏱️ Time Spent
 
 | Task | Time |
-|------|------:|
-| Project Setup | 30 minutes |
-| UI Design | 3 hours |
-| Gemini API Integration | 2 hours |
-| Recipe Rendering | 2 hours |
-| Save & Copy Features | 1 hour |
-| Dark Mode | 30 minutes |
-| Progress Tracker | 1 hour |
-| Testing & Bug Fixes | 2 hours |
-| Documentation | 30 minutes |
+|----------------------------|---------:|
+| Project Setup | 20 minutes |
+| UI Design & Styling | 2 hours |
+| Gemini API Integration | 1 hour 30 minutes |
+| Recipe Rendering | 1 hour |
+| Save & Copy Features | 30 minutes |
+| Dark Mode Implementation | 20 minutes |
+| Progress Tracker | 40 minutes |
+| Testing & Bug Fixes | 1 hour |
+| Documentation | 10 minutes |
 
-**Total Time:** Approximately **12 hours**
+**Total Time:** Approximately **8 hours**
 
 ---
 
@@ -174,11 +177,12 @@ README.md
 
 - User authentication
 - Recipe history
-- Image generation for recipes
+- AI-generated recipe images
 - Dynamic nutrition calculation
 - Shopping list generation
 - Voice-guided cooking
 - Multi-language support
+- Cloud synchronization
 
 ---
 
@@ -186,8 +190,8 @@ README.md
 
 **Tejas D Ponarkar**
 
-Artificial Intelligence & Machine Learning Student
+Computer Science Graduate
 
 ---
 
-⭐ If you found this project useful, consider giving it a star.
+⭐ If you found this project useful, consider giving it a star!
